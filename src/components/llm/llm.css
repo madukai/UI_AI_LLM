@@ -1,0 +1,29 @@
+.llm-header {
+    font-family: Courier, monospace;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.invoke-btn {
+    margin-top: 10px;
+}
+
+.form-control {
+    width: 500px;
+    height: 800px;
+    resize: none;
+}
+
+.AI_response {
+    border: 2px solid springgreen;
+    margin-top: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    position: absolute;
+}
+
+.AI_response > p {
+    font: 1.2em sans-serif;
+    line-height: 1.6;
+}
