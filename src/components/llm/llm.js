@@ -53,7 +53,7 @@ function LLM() {
     const invoke = async () => {
       setAIResponse('Currently Thinking...');
       const msg = {
-        model: 'gemma3:1b',
+        model: llmModel || 'gemma3:1b',
         messages: [{ role: 'user', content: userPrompt }],
       };
       const response = await fetchDataFromLLM(msg, llmEndpoint);
