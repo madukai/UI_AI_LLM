@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^5.3.7",
-    "ollama": "^0.5.16",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

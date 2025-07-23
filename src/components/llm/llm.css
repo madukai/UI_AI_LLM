@@ -4,13 +4,23 @@
     font-weight: 600;
 }
 
+.llm-endpoint-input {
+    height: 35px !important;
+    width: 400px;
+}
+
+.llm-model-input {
+    height: 35px !important;
+    width: 150px;
+}
+
 .invoke-btn {
     margin-top: 10px;
 }
 
-.form-control {
+.prompt-input {
     width: 500px;
-    height: 800px;
+    height: 90px !important;
     resize: none;
 }
 
