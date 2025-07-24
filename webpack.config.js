@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackRootPlugin = require('html-webpack-root-plugin');
 
 module.exports = {
     entry: './src/index.tsx',
@@ -7,6 +8,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: 'public/index.html' // Path to your template file.
+        })
+    ],
     module: {
         rules: [
             {
@@ -30,5 +36,4 @@ module.exports = {
         historyApiFallback: true,
         hot: true,
     },
-    plugins: [new HtmlWebpackPlugin()],
 };

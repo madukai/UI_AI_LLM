@@ -1,5 +1,5 @@
-import React from 'react';
-import { FC } from 'react';
+import React, { FC } from 'react';
+import LLM from './components/llm/llm';
 import './App.css';
 
 interface AppProps {
@@ -7,7 +7,11 @@ interface AppProps {
 }
 
 const App: FC<AppProps> = ({ title }) => {
-  return <h1>{title}</h1>;
+  return <div>
+    <h1>{title}</h1>
+    <LLM />
+  </div>
+  
 };
 
 export default App;
